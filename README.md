@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Project Work Log:
 
-##Check: Add Bootstrap 4 Ref: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+## Check: Add Bootstrap 4 Ref: https://getbootstrap.com/docs/4.0/getting-started/introduction/
 * Add to index.html: ``` <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> ```
 * Add to end of index.html:
 ```
@@ -37,4 +37,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 ```
 
-##Check:
+## Check: Add Nav bar (reponsive)
+* https://getbootstrap.com/docs/4.0/components/navs/#working-with-flex-utilities
