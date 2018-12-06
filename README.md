@@ -39,3 +39,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Check: Add Nav bar (reponsive)
 * https://getbootstrap.com/docs/4.0/components/navs/#working-with-flex-utilities
+
+## Check: Add Table
+* https://getbootstrap.com/docs/4.0/content/tables/#examples
+
+## Check:
