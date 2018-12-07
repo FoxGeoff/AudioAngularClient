@@ -43,4 +43,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Check: Add Table
 * https://getbootstrap.com/docs/4.0/content/tables/#examples
 
-## Check:
+## Check: Add Fontawesome
+* https://fontawesome.com/start
+* ``` <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> ```
+* 
+```
+<span style="font-size: 3em; color: Tomato;">
+  <i class="fas fa-microphone-alt ">Audio Impact</i>
+</span>
+```
