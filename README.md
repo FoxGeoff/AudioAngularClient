@@ -86,6 +86,14 @@ import { InMemoryDataService }  from './in-memory-data.service';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-
+ ``` 
 
 *  **To be continued after the message service is added**
+
+## Check: Add Message Service
+* Run: ``` ng g service shared\Message --dry-run  ```
+* Code service:
+```
+
+
+````
