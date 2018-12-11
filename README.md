@@ -59,3 +59,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * https://angular.io/tutorial/toh-pt6#simulate-a-data-server
 * Run: ``` npm install angular-in-memory-web-api --save  ```
 * src/app/app.module.ts (In-memory Web API imports)
+* Add: Enable Http services: **Add to src/app/app.module.ts (In-memory Web API imports):** 
+```
+import { HttpClientModule} from '@angular/common/http' ;
+```
+* Run: ``` ng g service shared\InMemoryData ```
+* Add:
+ ```
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+```
+## Check: Add hero.service.ts
+* https://angular.io/tutorial/toh-pt6#heroes-and-http
