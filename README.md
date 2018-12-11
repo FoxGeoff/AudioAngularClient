@@ -54,3 +54,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 ## Check Add Service test-item 
 * Run: ``` ng g service test-items\test-item --dry-run ```
+
+## Check: Simulate a data server
+* https://angular.io/tutorial/toh-pt6#simulate-a-data-server
+* Run: ``` npm install angular-in-memory-web-api --save  ```
+* src/app/app.module.ts (In-memory Web API imports)
