@@ -52,7 +52,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   <i class="fas fa-microphone-alt ">Audio Impact</i>
 </span>
 ```
-## Check Add Service test-item 
+## Check Add Service test-items 
 * Run: ``` ng g service test-items\test-item --dry-run ```
 
 ## Check: Simulate a data server
@@ -69,5 +69,23 @@ import { HttpClientModule} from '@angular/common/http' ;
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 ```
-## Check: Add hero.service.ts
+## Check: Add code test-items.service.ts
 * https://angular.io/tutorial/toh-pt6#heroes-and-http
+* Add: ``` import { HttpClient, HttpHeaders } from '@angular/common/http'; ```
+
+## Fix Error in app.module (error: blocked CORS):
+```
+ imports: [
+    BrowserModule,
+    HttpClientModule,
+
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
+  ],
+
+
+*  **To be continued after the message service is added**
