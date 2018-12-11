@@ -73,7 +73,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 * https://angular.io/tutorial/toh-pt6#heroes-and-http
 * Add: ``` import { HttpClient, HttpHeaders } from '@angular/common/http'; ```
 
-## Fix Error in app.module (error: blocked CORS):
+## Check: Fix Error in app.module (error: blocked CORS):
 ```
  imports: [
     BrowserModule,
