@@ -95,5 +95,17 @@ import { InMemoryDataService }  from './in-memory-data.service';
 * Code service:
 ```
 
+export class MessageService {
+  messages: string[] = [];
 
+  constructor() { }
+
+  add(message: string) {
+    this.messages.push(message);
+  }
+
+  clear() {
+    this.messages = [];
+  }
 ````
+## Check: Code TestItems Service (cont.)
