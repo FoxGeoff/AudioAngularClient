@@ -21,13 +21,22 @@ export class TestItemsService {
   }
 
   /** GET TestItems from the server */
-  getTestValues(): Observable<TestItem[]> {
-    // TODO: send the message _after_ fetching the Quizes
+  getTestItems(): Observable<TestItem[]> {
+    // TODO: send the message _after_ fetching the TestItems
     this.messageService.add('TestItemService: fetched TestItems');
 
     return this.http.get<TestItem[]>(this.TestItemsUrl).pipe(
       tap(TestItems => this.log('fetched TestItems')),
       catchError(this.handleError('getTestItem', []))
+    );
+  }
+
+  /** GET TestItem by id. Will 404 if id not found */
+  getTestValue(id: number): Observable<TestItem> {
+    const url = `${this.TestItemsUrl}/${id}`;
+    return this.http.get<TestItem>(url).pipe(
+      tap(_ => this.log(`fetched testItem id=${id}`)),
+      catchError(this.handleError<TestItem>(`getTestItem id=${id}`))
     );
   }
 
