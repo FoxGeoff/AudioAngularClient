@@ -32,7 +32,7 @@ export class TestItemsService {
   }
 
   /** GET TestItem by id. Will 404 if id not found */
-  getTestValue(id: number): Observable<TestItem> {
+  getTestItem(id: number): Observable<TestItem> {
     const url = `${this.TestItemsUrl}/${id}`;
     return this.http.get<TestItem>(url).pipe(
       tap(_ => this.log(`fetched testItem id=${id}`)),
